@@ -1,8 +1,11 @@
 :root {
   --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --secondary-color: #f9f7fe;
   --third-color: #212529;
+  --heading-color: #272142;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --heading-font-family: 'Playfair Display', serif;
+  --default-font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -17,49 +20,58 @@ h3 {
 
 h1 {
   font-size: 96px;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--heading-font-family);
 }
 
 h2 {
   font-size: 48px;
-  font-family: 'Playfair Display', serif;
-}
-
-h3 {
-  font-size: 24px;
-  opacity: 0.7;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--heading-font-family);
 }
 
 p {
   font-size: 18px;
   line-height: 1.5;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--default-font-family);
 }
-a {
-  font-family: 'Poppins', sans-serif;
+
+.hero {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 160px 20px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  color: var(--heading-color);
+}
+
+.hero h3 {
+  font-family: var(--default-font-family);
+  size: 24px;
+  font-weight: normal;
+  color: var(--heading-color);
+}
+
+.btn-branding {
+  font-family: var(--default-font-family);
   text-decoration: none;
-  color: var(--third-color);
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+  box-shadow: var(--box-shadow);
 }
 
 .navigation-links {
   display: flex;
-  margin-top: 40px;
+  margin-top: 20px;
   justify-content: center;
 }
 
 .navigation-links a {
   margin: 20px;
-}
-
-.primary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
 }
 
 .secondary-link {
