@@ -116,6 +116,10 @@ p {
 .email-link:hover {
   text-decoration: underline;
 }
+.social {
+  text-decoration: none;
+  color: var(--third-color);
+}
 
 @media (max-width: 900px) {
   .project-description {
