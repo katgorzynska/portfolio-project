@@ -130,17 +130,6 @@ p {
   display: block;
 }
 
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
-  text-decoration: none;
-}
-
-.email-link:hover {
-  text-decoration: underline;
-}
 .social {
   text-decoration: none;
   color: var(--third-color);
