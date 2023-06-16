@@ -217,6 +217,10 @@ footer .social a:hover {
   max-height: 40px;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
